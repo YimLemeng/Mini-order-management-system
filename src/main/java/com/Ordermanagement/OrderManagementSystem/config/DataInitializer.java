@@ -33,7 +33,6 @@ public class DataInitializer implements CommandLineRunner {
             return;
         }
 
-        // ១. បង្កើត និង Save Categories
         Category electronics = new Category();
         electronics.setName("Electronics");
 
@@ -47,8 +46,7 @@ public class DataInitializer implements CommandLineRunner {
         Category savedElectronics = savedCategories.get(0);
         Category savedAccessories = savedCategories.get(1);
         Category savedAppliances = savedCategories.get(2);
-
-        // ២. បង្កើត Products ចំនួន ២៥
+        
         List<Product> products = new ArrayList<>();
 
         products.add(createProduct("iPhone 15 Pro", 1199.00, 15, Set.of(savedElectronics)));
@@ -83,7 +81,6 @@ public class DataInitializer implements CommandLineRunner {
 
         productRepository.saveAll(products);
 
-        // ៣. បង្កើត Customers ចំនួន ២៥ នាក់
         List<Customer> customers = new ArrayList<>();
 
         customers.add(createCustomer("Sok Dara", "dara@gmail.com", "012345678"));
@@ -118,10 +115,9 @@ public class DataInitializer implements CommandLineRunner {
 
         customerRepository.saveAll(customers);
 
-        System.out.println("✅ Sample data initialized successfully (25 Products & 25 Customers)!");
+        System.out.println("Sample data initialized successfully (25 Products & 25 Customers)!");
     }
-
-    // Helper Method សម្រាប់បង្កើត Product
+    
     private Product createProduct(String name, double price, int stock, Set<Category> categories) {
         Product product = new Product();
         product.setName(name);
@@ -131,7 +127,6 @@ public class DataInitializer implements CommandLineRunner {
         return product;
     }
 
-    // Helper Method សម្រាប់បង្កើត Customer
     private Customer createCustomer(String name, String email, String phone) {
         Customer customer = new Customer();
         customer.setName(name);
