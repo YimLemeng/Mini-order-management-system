@@ -7,7 +7,6 @@ import com.Ordermanagement.OrderManagementSystem.Entity.Category;
 import com.Ordermanagement.OrderManagementSystem.Entity.Product;
 import org.springframework.stereotype.Component;
 
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Component
