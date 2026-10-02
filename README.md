@@ -135,7 +135,6 @@ src/main/java/com/Ordermanagement/OrderManagementSystem/
 
 ## 🌐 Live Production Links
 
-- **Backend API**: [https://mini-order-management-system.onrender.com](https://mini-order-management-system.onrender.com)
 - **Frontend Dashboard**: [https://mini-order-management-web.yimlemeng069.workers.dev](https://mini-order-management-web.yimlemeng069.workers.dev)
 
 ---
