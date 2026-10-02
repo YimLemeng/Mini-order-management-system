@@ -136,8 +136,3 @@ src/main/java/com/Ordermanagement/OrderManagementSystem/
 ## 🌐 Live Production Links
 
 - **Frontend Dashboard**: [https://mini-order-management-web.yimlemeng069.workers.dev](https://mini-order-management-web.yimlemeng069.workers.dev)
-
----
-
-## 📄 License
-This project is open-source and available under the [MIT License](LICENSE).
